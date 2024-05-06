@@ -1,4 +1,5 @@
 package com.example.SergiosAppdemo;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -7,7 +8,7 @@ public class AppClass {
     @GetMapping(path = "/ciao/Lombardia")
     public parameterRiquest requestParam(
             @RequestParam(defaultValue = "Lombardia") String provincia
-            ,@RequestParam(defaultValue = "Giuseppe") String nome) {
+            , @RequestParam(defaultValue = "Giuseppe") String nome) {
         return new parameterRiquest(nome, provincia);
     }
 
