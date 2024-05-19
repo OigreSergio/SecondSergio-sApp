@@ -1,8 +1,8 @@
 package com.example.SergiosAppdemo;
 
 
-public class parameterRiquest {
-    public parameterRiquest(String nome, String provincia) {
+public class UserData {
+    public UserData(String nome, String provincia) {
         this.nome = nome;
         this.provincia = provincia;
         this.outPut = "Ciao" + " " + getNome() + " , " + "Com'e il tempo in " + getProvincia() + "?";
